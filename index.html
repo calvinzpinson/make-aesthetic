@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1>A E S T H E T I C  T E X T - I F I E R</h1>
+
+<input type = "text" id = "uglyText">
+<input type = "button" id = "aestheticButton" onclick = "aestheticifier()" value = "M A K E  A E S T H E T I C">
+
+<textarea id="aestheticOutput"></textarea>
+
+<script>
+function aestheticifier() {
+	var uglyText = document.getElementById("uglyText").value;
+	var aestheticText = makeAesthetic(uglyText);
+	document.getElementById("aestheticOutput").value=aestheticText;
+}
+
+function makeAesthetic(uglyText) {
+	var aestheticText = uglyText.toUpperCase().split('').join(' ');
+	return aestheticText;
+}
+</script>
+
+</body>
+</html> 
